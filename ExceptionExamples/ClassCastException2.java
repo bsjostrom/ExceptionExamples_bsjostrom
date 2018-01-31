@@ -9,7 +9,7 @@ public class ClassCastException2
         try{
         System.out.println((String)x);
     }   catch (ClassCastException e) {
-        System.out.println("Don't cast like that: " + e);
+        System.out.println("Don't cast like that: " + e.toString());
 }
         
         

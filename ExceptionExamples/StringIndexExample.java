@@ -7,7 +7,7 @@ public class StringIndexExample
        try {
        System.out.println(str.charAt(-1));
     } catch (StringIndexOutOfBoundsException e) {
-        System.out.println ("Your code doesn't work: " + e);
+        System.out.println ("Your code doesn't work: " + e.toString());
     }
        
      

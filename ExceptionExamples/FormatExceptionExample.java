@@ -13,8 +13,11 @@ public class FormatExceptionExample
         System.out.println("Enter the divisor");
         divisor = Integer.parseInt(kboard.next());
 
-  
+        try {
         System.out.println(dividend / divisor);
+    }catch (ArithmeticException e) {
+        System.out.println("You can't divide by zero: " + e);
+    }
         
 
     }

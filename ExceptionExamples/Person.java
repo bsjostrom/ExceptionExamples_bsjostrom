@@ -1,5 +1,5 @@
 
-public class Person
+public class Person 
 {
    private String name;
    private int age;   
@@ -9,9 +9,14 @@ public class Person
        age = age;       
     }
     
-   public int lengthOfName(){       
+   public int lengthOfName() throws NullPointerException{ 
+       if (name == null) {
+           throw new NullPointerException("The name wasn't set");
+        } else {
        return name.length();
-   }
+     
+    }
+}
    
    @Override
    public boolean equals(Object other){       
